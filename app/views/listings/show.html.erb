@@ -1,0 +1,6 @@
+<p>show</p>
+<% show_listing = Listing.find_by(id: params[:id]) %>
+<p><%= show_listing.name %> </p>
+<p><%= show_listing.price %></p>
+<p><%= show_listing.description %></p>
+<a href="/listings">Back to home</a>
